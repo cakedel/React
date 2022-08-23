@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topbanner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .TopBanner {            
+            background: #f8f8f8;
+            overflow: hidden;
+            height: 100px;
+            transition: 0.5s;
+        }
+
+        .TopBanner.on {
+            height: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="TopBanner">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Dolores, aperiam.</p>
+        <button>close</button>
+    </div>
+    <script>
+        document.querySelector('button').addEventListener('click', function () {
+            document.querySelector('.TopBanner').classList.toggle('on')
+        })
+    </script>
+</body>
+
+</html>
