@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { IoAccessibilitySharp } from "react-icons/io5";
-import styles from './TopBanner.module.css';
 
 const TopBanner = () => {
     // 1. 아이콘을 클릭한다.
@@ -9,11 +8,6 @@ const TopBanner = () => {
     // 4. true / false 값에 따라서 class "on"을 붙인다 / 뗀다
 
     const [toggle, setToggle] = useState(false);
-
-    const css = {
-        color: '#f00',
-        fontSize: '30px'
-    }
 
     return (
         <>
@@ -29,8 +23,6 @@ const TopBanner = () => {
             <span className={`btn ${toggle ? 'on' : ''}`} onClick={() => { setToggle(!toggle) }}>
                 <IoAccessibilitySharp />
             </span>
-            <div style={css}>style test</div>
-            <div className={styles.test}>Blue</div>
         </>
     )
 }

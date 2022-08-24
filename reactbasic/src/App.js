@@ -1,10 +1,9 @@
-import TopBanner from "./pages/TopBanner";
-import './basic.css'
+import Tab from "./pages/Tab01";
 
 const App = () => {
   return (
     <>
-      <TopBanner/>
+      <Tab />
     </>
   )
 }
