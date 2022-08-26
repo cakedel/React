@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = 'soocha';
+        let age = 10;
+
+        function tag(strings, personExp, ageExp) {
+            let str0 = strings[0];
+            let str1 = strings[1];
+            let ageStr;
+            if (ageExp > 99) {
+                ageStr = 'centenarian'
+            }
+            else {
+                ageStr = 'youngster'
+            }
+
+            // tag 함수 내에서도 템플릿 리터럴 반환 가능
+        }
+
+        let output = tag`that ${person} is a ${age}`
+        console.log(output)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+@import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1;
+}
+
+.TopBanner {            
+    background: #f8f8f8;
+    overflow: hidden;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.TopBanner.on {
+    height: 0;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 30px;
+    color: #f00;
+    transition: 0.5s;
+}
+
+.btn.on {
+    transform: rotate(0.5turn);
+}
